@@ -14,11 +14,21 @@
       align-items: center;
       background-color: #ffffff;
       font-family: sans-serif;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
-    img {
-      max-width: 90vw;
-      max-height: 75vh;
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; /* ถ้าจอมือถือแคบจะปัดลงมาอัตโนมัติไม่เบียดกัน */
+    }
+
+    .gallery img {
+      max-width: 28vw;
+      max-height: 65vh;
       width: auto;
       height: auto;
       object-fit: contain;
@@ -28,13 +38,22 @@
       margin-top: 24px;
       font-size: 3rem;
       color: #000000;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <!-- นำชื่อไฟล์รูปภาพหรือลิงก์รูปมาใส่แทนคำว่า your-image.jpg ด้านล่างนี้ -->
-  <img src="images/fat.jpg" alt="fat.jpg">
+  <div class="gallery">
+    <!-- รูปด้านซ้าย -->
+    <img src="images/fat2.jpg" alt="left.jpg">
+
+    <!-- รูปตรงกลาง -->
+    <img src="images/fat.jpg" alt="fat.jpg">
+
+    <!-- รูปด้านขวา -->
+    <img src="images/pig.jpg" alt="right.jpg">
+  </div>
 
   <h1>อ้วนแคระ</h1>
 
